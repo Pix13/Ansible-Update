@@ -45,7 +45,7 @@ function run_ansible_playbook(){
   printf "${color_green}Running Playbook...${color_reset}\n"
   printf "Inventory:\t${color_yellow}%s${color_reset}\n" "${inventory_path}"
   printf "Playbook :\t${color_yellow}%s${color_reset}\n\n" "${playbook_path}"
-  ansible-playbook --ask-become-pass --inventory="${inventory_path}" "${playbook_path}"
+  ansible-playbook --inventory="${inventory_path}" "${playbook_path}"
 }
 
 
