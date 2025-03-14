@@ -22,7 +22,7 @@
 
     # Task to update CentOS-based Linux distributions
     - name: Update CentOS-based Linux distributions
-      when: ansible_distribution in ['CentOS', 'RedHat', 'OracleLinux', 'Amazon']
+      when: ansible_distribution in ['CentOS', 'RedHat', 'OracleLinux', 'Amazon', 'Rocky']
       ansible.builtin.yum:
         name: '*'
         state: latest
